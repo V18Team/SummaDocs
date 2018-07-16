@@ -1,11 +1,11 @@
 <?php
 
-class firstTest extends \Symfony\Bundle\FrameworkBundle\Test\WebTestCase
-{
+use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-    public function test()
+class firstTest extends WebTestCase
+{
+    public function testAssert()
     {
-        $cos = \Symfony\Component\Yaml\Yaml::parseFile('config.yaml');
-        var_dump($cos);
+        $this->assertTrue(true);
     }
 }
