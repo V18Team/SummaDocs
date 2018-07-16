@@ -27,14 +27,14 @@ class LoginController extends Controller
         if ($auth->isGranted('ROLE_ADMIN')) {
             return $this->redirectToRoute('');
         }
-		$helper = $this->get('security.authentication_utils');
+        $helper = $this->get('security.authentication_utils');
         return $this->render('index.html.twig', [
-			'h' => $helper->getLastAuthenticationError(),	
-			'pageTitle' => 'Tytul',
-			'configProductName' => $config->get('product_name'),
-			'configPageLanguage' => $config->get('page_language'),
-			'configAuthor' => $config->get('author')
-		]);
+           'h' => $helper->getLastAuthenticationError(),	
+           'pageTitle' => 'Tytul',
+           'configProductName' => $config->get('product_name'),
+           'configPageLanguage' => $config->get('page_language'),
+           'configAuthor' => $config->get('author')
+        ]);
     }
     public function checkView()
     {
