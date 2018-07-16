@@ -1,0 +1,20 @@
+###========================================================================
+index:
+    path: /
+    controller: App\Controller\LoginController::indexView
+index2:
+    path: /index
+    controller: App\Controller\LoginController::indexView
+index3:
+    path: /login
+    controller: App\Controller\LoginController::indexView
+logout:
+    path: /logout
+    controller: App\Controller\LoginController::logoutView
+check:
+    path: /check
+    controller: App\Controller\LoginController::checkView
+###==========================================================================
+administratorDashboard:
+    path: /administrator
+    controller: App\Controller\AdminDashboardController::dashboardView
