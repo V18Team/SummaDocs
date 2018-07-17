@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ pageTitle }}{% endblock %}
+
+{% block stylesheets %}
+<link rel="stylesheet" href="https://raw.githubusercontent.com/jasonkarns/css-reset/master/reset.css">
+<link rel="stylesheet" href="css/index.css">
+{% endblock %}
+
+{% block body %}
+<header class="header">
+    <nav class="menu-nav">
+	    <ul class="nav-list">
+			<li class="menu-link">Documentation<li>
+			<li class="menu-link">About project</li>
+			<li class="menu-link">Contributing</li>
+			<li class="menu-link">Contact</li>
+			<li class="menu-link">Login</li>
+			<li class="menu-link">Register</li>
+		</ul>
+    </nav>
+</header>
+<section class="first-block">
+    <header class="section-header">
+        <h2>
+            {{ configProductName }}
+        </h2>
+    </header>
+</section>
+	<!--<form action="check" method="post">
+	
+	Login: <input type="text" name="_username"><br>
+	Password: <input type="password" name="_password"><br>
+	Submit: <input type="submit" value="Zaloguj">
+	
+	</form>
+	
+<br><br><br><h1>Error:</h1><h3>{{ h }} </h3>
+-->
+{% endblock %}
+
+
+{% block javascripts %}
+
+{% endblock %}
